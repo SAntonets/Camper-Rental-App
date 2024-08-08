@@ -1,0 +1,15 @@
+:root {
+  --main: #101828;
+  --text-color: #475467;
+  --button: #e44848;
+  --button-hover: #d84343;
+  --white: #ffffff;
+  --rating: #ffc531;
+  --rating-hover: #e7a500;
+  --inputs: #F7F7F7;
+  --blok-features: #f2f4f7;
+
+  --transition-function: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+
+  --container: 1440px;
+}
