@@ -1,0 +1,7 @@
+.catalogPage_wrapper {
+    display: flex;
+    align-items: flex-start;
+  
+    gap: 64px;
+  }
+  
