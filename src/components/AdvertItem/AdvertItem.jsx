@@ -8,6 +8,7 @@ import { useDispatch } from 'react-redux';
 import { setFavorite } from '../../redux/favoritesSlice';
 import { CutText, CutTitle } from '../CutText/CutText';
 import { Button } from '../Button/Button';
+import FeaturesInAdvertItem from '../Features/FeaturesInAdvertItem';
 
 const AdvertItem = ({ advert, toggleShowModal, isFavorite = false }) => {
   const dispatch = useDispatch();

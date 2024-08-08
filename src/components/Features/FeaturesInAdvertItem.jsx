@@ -1,6 +1,6 @@
 import css from './Features.module.css';
-import svgSprite from '../../img/icons.svg';
-import { toCapitalize } from 'helpers/helperFunctions';
+import svgSprite from '../../../public/images/icons.svg';
+import { toCapitalize } from '../../helpers/helperFunctions';
 
 const FeaturesInAdvertItem = ({ advert }) => {
   return (
