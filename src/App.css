@@ -1,9 +1,41 @@
 @import './styles/variables.css';
+@import './styles/reset.css';
+@import './styles/common.css';
 
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--primary-color);
+}
+
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+.content {
+  display: flex;
+  flex-grow: 1;
+}
+
+.header, .footer {
+  padding: 20px;
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.footer {
+  text-align: center;
+}

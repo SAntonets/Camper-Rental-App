@@ -8,10 +8,8 @@ const Loader = () => {
             height="80"
             width="80"
             radius="9"
-            color= "var(--button-background)"
+            color= "var(--button)"
             ariaLabel="three-dots-loading"
-            wrapperStyle
-            wrapperClass
             />
         </div>
     );
