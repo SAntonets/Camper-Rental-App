@@ -26,7 +26,7 @@ const CatalogPage = () => {
   }, [dispatch]);
 
   return (
-    <main className="container">
+ 
         <div className={css.catalogPage_wrapper}>
           <SearchForm />
           {isLoading && !error ? (
@@ -35,7 +35,7 @@ const CatalogPage = () => {
             <AdvertsList allAdverts={allAdverts} />
           )}
         </div>
-    </main>
+ 
   );
 };
 
