@@ -1,10 +1,8 @@
 import { useState } from 'react';
-
 import css from './BookingForm.module.css';
 import svgSprite from '../../../public/images/icons.svg';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-
 import { SubmitButton } from '../Button/Button';
 import { validateForm } from '../../helpers/bookingFormValidation';
 import { successSubmit } from '../../helpers/notifications';
@@ -16,7 +14,6 @@ const BookingForm = () => {
     event.preventDefault();
 
     const formData = new FormData(event.target);
-
     let bookingData = Object.fromEntries(formData.entries());
     bookingData = {
       ...bookingData,
@@ -29,6 +26,7 @@ const BookingForm = () => {
       console.log('form bookingData :>> ', bookingData);
       successSubmit('Your booking request has been successfully sent');
       reset(event);
+      window.location.reload();
     } else {
       console.log('Form is invalid :>> ', errors);
     }

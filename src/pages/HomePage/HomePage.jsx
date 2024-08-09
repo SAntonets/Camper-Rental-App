@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import styles from './HomePage.module.css';
 
 const HomePage = () => {
@@ -8,8 +9,8 @@ const HomePage = () => {
           <h1 className={styles.title}>Explore the Best Campers</h1>
           <p className={styles.description}>Find and rent the perfect camper for your next adventure.</p>
           <div className={styles.buttons}>
-            <a href="/catalog" className={styles.btnPrimary}>View Catalog</a>
-            <a href="/favorites" className={styles.btnSecondary}>Favorites</a>
+            <NavLink to="/catalog" className={styles.btnPrimary}>View Catalog</NavLink>
+            <NavLink to="/favorites" className={styles.btnSecondary}>Favorites</NavLink>
           </div>
         </div>
       </div>
