@@ -1,9 +1,9 @@
-@import './styles/variables.css';
-@import './styles/reset.css';
-@import './styles/common.css';
+@import "./styles/variables.css";
+@import "./styles/reset.css";
+@import "./styles/common.css";
 
 #root {
-  max-width: 1280px;
+  max-width: 1440px;
   margin: 0 auto;
   text-align: center;
 }
@@ -19,18 +19,24 @@ body {
   background-color: var(--primary-color);
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .appContainer {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; 
+  min-height: 100vh;
 }
 
 .content {
   display: flex;
   flex-grow: 1;
+  padding: 10px 0 10px 0;
 }
 
-.header, .footer {
+.header,
+.footer {
   padding: 20px;
   background-color: var(--primary-color);
   color: var(--white);

@@ -1,0 +1,24 @@
+.advertsList_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+    gap: 50px;
+  
+    width: calc(100% - 360px);
+  }
+  
+  .advertsList {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  
+    width: 100%;
+  }
+  
+  .not_found {
+    margin-top: 30px;
+    text-align: center;
+  }
+  

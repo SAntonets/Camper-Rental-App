@@ -1,9 +1,40 @@
-import React from 'react'
+import { useEffect } from 'react';
+
+import css from '../CatalogPage/CatalogPage.module.css';
+
+
+import { useDispatch, useSelector } from 'react-redux';
+import {
+  filteredFavoritesAdvertsSelector,
+  selectError,
+  selectIsLoading,
+} from '../../redux/selectors';
+import { getAdverts } from '../../redux/operations';
+
+import Loader from '../../components/Loader/Loader';
+import AdvertsList from '../../components/AdvertList/AdvertList';
+import SearchForm from '../../components/SearchForm/SearchForm';
 
 const FavoritesPage = () => {
-  return (
-    <div>FavoritesPage</div>
-  )
-}
+  const dispatch = useDispatch();
+  const isLoading = useSelector(selectIsLoading);
+  const error = useSelector(selectError);
+  const favAdverts = useSelector(filteredFavoritesAdvertsSelector);
 
-export default FavoritesPage
+  useEffect(() => {
+    dispatch(getAdverts());
+  }, [dispatch]);
+
+  return (
+        <div className={css.catalogPage_wrapper}>
+          <SearchForm />
+          {isLoading && !error ? (
+            <Loader />
+          ) : (
+            <AdvertsList allAdverts={favAdverts} isFavorites={true} />
+          )}
+        </div>
+  );
+};
+
+export default FavoritesPage;

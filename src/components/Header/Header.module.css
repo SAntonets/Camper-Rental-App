@@ -1,6 +1,6 @@
 .header {
     padding: 12px;
-    background-color: var(--blok-features);
+    background-color: var(--inputs);
     color: var(--text-color);
     display: flex;
     justify-content: space-between;
