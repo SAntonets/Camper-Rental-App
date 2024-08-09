@@ -120,7 +120,7 @@
 .advert_details_btns {
   display: flex;
   gap: 40px;
-  border-bottom: 1px solid var(--blok-features);
+  border-bottom: 1px solid var(--placeholder);
 }
 
 .advert_details_btn {

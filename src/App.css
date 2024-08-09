@@ -6,6 +6,7 @@
   max-width: 1440px;
   margin: 0 auto;
   text-align: center;
+  width: 100%;
 }
 
 * {
@@ -15,8 +16,9 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: Inter, sans-serif;
   background-color: var(--primary-color);
+  display: flex;
 }
 
 .no-scroll {
@@ -31,17 +33,16 @@ body {
 
 .content {
   display: flex;
-  flex-grow: 1;
-  padding: 10px 0 10px 0;
+  flex: 1;
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: start;
 }
 
-.header,
-.footer {
+.header {
   padding: 20px;
   background-color: var(--primary-color);
   color: var(--white);
-}
-
-.footer {
-  text-align: center;
+  position: sticky;
 }

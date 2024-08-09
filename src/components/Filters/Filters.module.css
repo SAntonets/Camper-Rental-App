@@ -34,14 +34,14 @@
   font-weight: 500;
   line-height: 1.25;
   border-radius: 10px;
-  border: 1px solid var(--blok-features);
+  border: 1px solid var(--placeholder);
   transition: border-color var(--transition-function);
 }
 
 .equipment_label:hover,
 .equipment_label:focus,
 .equipment_label:has(input:checked) {
-  border-color: var(--button-hover);
+  border-color: var(--button);
 }
 
 .equipment_label input,

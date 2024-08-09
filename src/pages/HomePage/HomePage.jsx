@@ -3,7 +3,7 @@ import styles from './HomePage.module.css';
 
 const HomePage = () => {
   return (
-    <div className={styles.homepage}>
+    <section className={styles.homepage}>
       <div className={styles.overlay}>
         <div className={styles.content}>
           <h1 className={styles.title}>Explore the Best Campers</h1>
@@ -14,7 +14,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
