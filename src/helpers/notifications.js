@@ -7,9 +7,3 @@ export function invalidInput(errorMessage) {
   });
 }
 
-export function successSubmit(message) {
-  toast.success(message, {
-    fontSize: '16px',
-    width: '350px',
-  });
-}

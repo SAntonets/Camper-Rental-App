@@ -7,7 +7,7 @@ import svgSprite from '../../../public/images/icons.svg';
 
 import { useDispatch } from 'react-redux';
 import { setFeatures } from '../../redux/filterSlice';
-import { ResetBtn, SubmitButton } from '../Button/Button';
+import { SubmitButton } from '../Button/Button';
 
 const Filters = () => {
   const dispatch = useDispatch();
@@ -29,14 +29,6 @@ const Filters = () => {
     dispatch(setFeatures({ equipment, type }));
   }
 
-  function onResetBtnClick() {
-    dispatch(
-      setFeatures({
-        equipment: [],
-        type: [],
-      })
-    );
-  }
 
   return (
     <form onSubmit={onHandleSubmit}>
@@ -164,7 +156,6 @@ const Filters = () => {
       </div>
       <div className={css.btns_set}>
         <SubmitButton>Search</SubmitButton>
-        <ResetBtn onClick={onResetBtnClick} />
       </div>
     </form>
   );

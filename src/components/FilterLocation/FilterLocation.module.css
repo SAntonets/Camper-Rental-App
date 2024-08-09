@@ -12,7 +12,7 @@
   left: 18px;
   top: 50%;
   transform: translateY(-50%);
-  fill: var(--blok-features);
+  fill: var(--text-color);
 }
 
 .location_input {
@@ -22,10 +22,6 @@
   border-radius: 10px;
   background: var(--inputs);
   outline: transparent;
-}
-
-.location_input:focus + .location_svg {
-  fill: var(--main);
 }
 
 .location_input::placeholder {

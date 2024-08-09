@@ -5,7 +5,6 @@ import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { SubmitButton } from '../Button/Button';
 import { validateForm } from '../../helpers/bookingFormValidation';
-import { successSubmit } from '../../helpers/notifications';
 
 const BookingForm = () => {
   const [startDate, setStartDate] = useState();
@@ -23,10 +22,7 @@ const BookingForm = () => {
     const errors = validateForm(bookingData);
 
     if (Object.keys(errors).length === 0) {
-      console.log('form bookingData :>> ', bookingData);
-      successSubmit('Your booking request has been successfully sent');
       reset(event);
-      window.location.reload();
     } else {
       console.log('Form is invalid :>> ', errors);
     }
@@ -35,6 +31,7 @@ const BookingForm = () => {
   const reset = event => {
     event.target.reset();
     setStartDate('');
+    window.location.reload();
   };
 
   return (
