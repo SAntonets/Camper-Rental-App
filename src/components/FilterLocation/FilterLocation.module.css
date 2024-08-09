@@ -24,6 +24,10 @@
   outline: transparent;
 }
 
+.location_input:focus + .location_svg {
+  fill: var(--main);
+}
+
 .location_input::placeholder {
   font-family: Inter;
   font-size: 16px;

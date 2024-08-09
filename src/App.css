@@ -39,10 +39,3 @@ body {
   width: 100%;
   text-align: start;
 }
-
-.header {
-  padding: 20px;
-  background-color: var(--primary-color);
-  color: var(--white);
-  position: sticky;
-}
