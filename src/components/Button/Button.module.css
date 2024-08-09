@@ -16,7 +16,6 @@
 
 .search_btn {
   composes: primary_btn;
-
   width: 173px;
 }
 
@@ -29,17 +28,15 @@
 
 .loadMore_btn {
   composes: primary_btn;
-
   width: 145px;
   background-color: transparent;
   border: 1px solid var(--blok-features);
-  color: var(--primary-black);
-
+  color: var(--text-color);
   transition: border-color var(--transition-function);
 }
 
 .loadMore_btn:hover,
 .loadMore_btn:focus {
   background-color: transparent;
-  border-color: var(--accent-color);
+  border-color: var(--text-color);
 }

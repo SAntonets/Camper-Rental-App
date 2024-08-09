@@ -39,7 +39,7 @@
   border-radius: 10px;
   background: var(--inputs);
   outline: transparent;
-  color: var(--blok-features);
+  color: var(--text-color);
 }
 
 .bookForm_textarea {
@@ -50,7 +50,9 @@
   padding: 18px;
   border-radius: 10px;
   background: var(--inputs);
-  border: none;
+  border: transparent;
+  outline: transparent;
+  color: var(--text-color);
 }
 
 .bookForm_textarea ::placeholder {
@@ -72,7 +74,8 @@
   right: 18px;
   top: 50%;
   transform: translateY(-50%);
-  fill: var(--blok-features);
+  fill: var(--text-color);
+  pointer-events: none;
 }
 
 .rent_form_button {

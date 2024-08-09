@@ -5,10 +5,10 @@
   --button-hover: #d84343;
   --white: #ffffff;
   --rating: #ffc531;
-  --rating-hover: #e7a500;
+  --rating-hover: #ffbe1a;
   --inputs: #f7f7f7;
   --blok-features: #f2f4f7;
-  --placeholder: rgba(16, 24, 40, 0.2);
+  --placeholder: rgba(16, 24, 40, 0.6);
 
   --transition-function: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 

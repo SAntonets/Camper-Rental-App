@@ -24,10 +24,3 @@ export const LoadMoreBtn = ({ onClick }) => {
   );
 };
 
-export const ResetBtn = ({ onClick }) => {
-  return (
-    <button className={css.loadMore_btn} type="button" onClick={onClick}>
-      Reset
-    </button>
-  );
-};

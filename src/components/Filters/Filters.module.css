@@ -34,7 +34,7 @@
   font-weight: 500;
   line-height: 1.25;
   border-radius: 10px;
-  border: 1px solid var(--placeholder);
+  border: 1px solid rgba(16, 24, 40, 0.2);
   transition: border-color var(--transition-function);
 }
 
@@ -67,7 +67,7 @@
 .type_label svg {
   width: 40px;
   height: 28px;
-  fill: var(--primary-black);
+  fill: var(--main);
 }
 
 .btns_set {

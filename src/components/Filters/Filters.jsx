@@ -7,7 +7,7 @@ import svgSprite from '../../../public/images/icons.svg';
 
 import { useDispatch } from 'react-redux';
 import { setFeatures } from '../../redux/filterSlice';
-import { ResetBtn, SubmitButton } from '../Button/Button';
+import { SubmitButton } from '../Button/Button';
 
 const Filters = () => {
   const dispatch = useDispatch();

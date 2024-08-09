@@ -1,12 +1,9 @@
 .advertItem_container {
   display: flex;
   gap: 24px;
-
   padding: 24px;
-
   border-radius: 20px;
   border: 1px solid var(--placeholder);
-
   transition: border-color var(--transition-function);
 }
 
@@ -39,9 +36,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   margin-bottom: 8px;
-
   font-size: 24px;
   font-weight: 600;
   line-height: 1.25;
@@ -73,7 +68,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   background-color: transparent;
 }
 
