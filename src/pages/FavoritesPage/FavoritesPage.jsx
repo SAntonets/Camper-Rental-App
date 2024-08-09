@@ -26,14 +26,15 @@ const FavoritesPage = () => {
   }, [dispatch]);
 
   return (
-        <div className={css.catalogPage_wrapper}>
+ 
+        <section className={css.catalogPage_wrapper}>
           <SearchForm />
           {isLoading && !error ? (
             <Loader />
           ) : (
             <AdvertsList allAdverts={favAdverts} isFavorites={true} />
           )}
-        </div>
+      </section>
   );
 };
 

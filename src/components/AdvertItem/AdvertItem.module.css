@@ -1,118 +1,117 @@
 .advertItem_container {
-    display: flex;
-    gap: 24px;
-  
-    padding: 24px;
-  
-    border-radius: 20px;
-    border: 1px solid rgba(16, 24, 40, 0.2);
-  
-    transition: border-color var(--transition-function);
-  }
-  
-  .advertItem_container:hover,
-  .advertItem_container:focus {
-    border-color: var(--button-hover);
-  }
-  
-  .advertItem_img {
-    width: 290px;
-    height: 310px;
-    object-fit: cover;
-    border-radius: 10px;
-    background-color: var(--blok-features);
-  }
-  
-  .advertItem_gallery {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-  }
-  
-  .advert_info {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-  }
-  
-  .advert_title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  
-    margin-bottom: 8px;
-  
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 1.25;
-  }
-  
-  .advert_title h2 {
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 1.25;
-  }
-  
-  .price_fav_wrapper {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .favorites_icon {
-    transition: fill var(--transition-function);
-  }
-  
-  .favorites_icon:hover,
-  .favorites_icon:focus {
-    fill: var(--button-hover);
-  }
-  
-  .favorites_btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-    background-color: transparent;
-  }
-  
-  .advert_subtitle {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  
-    gap: 16px;
-  }
-  
-  .advert_reviews {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 4px;
-  }
-  
-  .advert_reviews p {
-    text-decoration: underline;
-  }
-  
-  .advert_reviews svg {
-    fill: var(--rating);
-  }
-  
-  .advert_location {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 4px;
-  }
-  
-  .advert_location svg {
-    fill: currentColor;
-  }
-  
-  .descr_text {
-    height: 24px;
-    overflow: hidden;
-  }
-  
+  display: flex;
+  gap: 24px;
+
+  padding: 24px;
+
+  border-radius: 20px;
+  border: 1px solid var(--placeholder);
+
+  transition: border-color var(--transition-function);
+}
+
+.advertItem_container:hover,
+.advertItem_container:focus {
+  border-color: var(--button-hover);
+}
+
+.advertItem_img {
+  width: 290px;
+  height: 310px;
+  object-fit: cover;
+  border-radius: 10px;
+  background-color: var(--blok-features);
+}
+
+.advertItem_gallery {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.advert_info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.advert_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 8px;
+
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.advert_title h2 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.price_fav_wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+.favorites_icon {
+  transition: fill var(--transition-function);
+}
+
+.favorites_icon:hover,
+.favorites_icon:focus {
+  fill: var(--button-hover);
+}
+
+.favorites_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: transparent;
+}
+
+.advert_subtitle {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  gap: 16px;
+}
+
+.advert_reviews {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px;
+}
+
+.advert_reviews p {
+  text-decoration: underline;
+}
+
+.advert_reviews svg {
+  fill: var(--rating);
+}
+
+.advert_location {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px;
+}
+
+.advert_location svg {
+  fill: currentColor;
+}
+
+.descr_text {
+  height: 24px;
+  overflow: hidden;
+}

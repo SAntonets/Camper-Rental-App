@@ -26,16 +26,14 @@ const CatalogPage = () => {
   }, [dispatch]);
 
   return (
- 
-        <div className={css.catalogPage_wrapper}>
+        <section className={css.catalogPage_wrapper}>
           <SearchForm />
           {isLoading && !error ? (
             <Loader />
           ) : (
             <AdvertsList allAdverts={allAdverts} />
           )}
-        </div>
- 
+        </section>
   );
 };
 
