@@ -1,11 +1,14 @@
 import { useState } from 'react';
 
-import Modal from './Modal';
 import css from './ModalAdvert.module.css';
 import style from '../AdvertItem/AdvertItem.module.css';
 import svgSprite from '../../../public/images/icons.svg';
-import Features from '../Features/Features';
 
+
+import  Modal  from '../Modal/Modal';
+import Features from '../Features/Features';
+import Reviews from '../Reviews/Reviews';
+import BookingForm from '../BookingForm/BookingForm';
 
 const ModalAdvert = ({ advert, onModalClose }) => {
   const [btnActive, setBtnActive] = useState('features');
@@ -69,7 +72,6 @@ const ModalAdvert = ({ advert, onModalClose }) => {
               <p className={`${css.advertItem_descr} text`}>
                 {advert.description}
               </p>
-
               <div className={css.advert_details_btns}>
                 <button
                   className={`${css.advert_details_btn} subtitle_h3 ${

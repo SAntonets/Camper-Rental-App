@@ -1,13 +1,13 @@
 import { useState } from 'react';
 
 import css from './BookingForm.module.css';
-import svgSprite from '../../img/icons.svg';
+import svgSprite from '../../../public/images/icons.svg';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 
-import { SubmitButton } from 'components/Button/Button';
-import { validateForm } from 'helpers/bookingFormValidation';
-import { successSubmit } from 'helpers/notifications';
+import { SubmitButton } from '../Button/Button';
+import { validateForm } from '../../helpers/bookingFormValidation';
+import { successSubmit } from '../../helpers/notifications';
 
 const BookingForm = () => {
   const [startDate, setStartDate] = useState();

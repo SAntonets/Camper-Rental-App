@@ -76,6 +76,7 @@ const AdvertItem = ({ advert, toggleShowModal, isFavorite = false }) => {
           onClick={() => {
             toggleShowModal(advert);
           }}
+          
         >
           Show more
         </Button>

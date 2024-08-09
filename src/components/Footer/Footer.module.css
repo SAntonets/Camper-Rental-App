@@ -1,7 +1,7 @@
 .footer {
     padding: 12px;
-    background-color: var(--primary-color);
-    color: black;
+    background-color: var(--inputs);
+    color: var(--text-color);
     text-align: center;
   }
   

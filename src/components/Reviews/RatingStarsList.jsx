@@ -1,5 +1,5 @@
 import css from './Reviews.module.css';
-import svgSprite from '../../img/icons.svg';
+import svgSprite from '../../../public/images/icons.svg';
 
 const RatingStarsList = ({ review }) => {
   const ratingValues = Array.from({ length: 5 }, (_, index) => index + 1);
