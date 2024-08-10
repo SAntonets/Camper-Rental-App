@@ -115,8 +115,6 @@
   display: flex;
   gap: 40px;
   border-bottom: 1px solid rgba(16, 24, 40, 0.2);
-  position: sticky;
-  top: -4px;
 }
 
 .advert_details_btn {
