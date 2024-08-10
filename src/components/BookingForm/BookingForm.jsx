@@ -3,13 +3,16 @@ import css from './BookingForm.module.css';
 import svgSprite from '../../../public/images/icons.svg';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
+import 'react-toastify/dist/ReactToastify.css';
 
 import { validateForm } from '../../helpers/bookingFormValidation';
 import { SubmitButton } from '../Buttons/Buttons';
-
+import { toast } from 'react-toastify';
+import { useNavigate } from 'react-router-dom';
 
 const BookingForm = () => {
-  const [startDate, setStartDate] = useState();
+  const navigate = useNavigate();
+  const [startDate, setStartDate] = useState(null);
 
   const handleSubmit = event => {
     event.preventDefault();
@@ -24,16 +27,20 @@ const BookingForm = () => {
     const errors = validateForm(bookingData);
 
     if (Object.keys(errors).length === 0) {
-      reset(event);
+      toast.success('Form submitted successfully!');
+      setTimeout(() => {
+        resetForm();
+      }, 1000)
+     
     } else {
       console.log('Form is invalid :>> ', errors);
     }
   };
 
-  const reset = event => {
-    event.target.reset();
-    setStartDate('');
-    window.location.reload();
+  const resetForm = () => {
+    document.querySelector('form').reset();
+    setStartDate(null);
+    navigate(0); 
   };
 
   return (
