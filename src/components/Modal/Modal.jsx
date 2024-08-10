@@ -9,35 +9,9 @@ const Modal = ({ onModalClose, children }) => {
   useEffect(() => {
     if (modalRoot) {
       document.body.classList.add('no-scroll');
-      const appContainer = document.querySelector('.appContainer');
-      const rootElement = document.querySelector('#root');
-      const contentElement = document.querySelector('.content');
-
-      if (appContainer) {
-        appContainer.classList.add('no-scroll');
-      }
-      if (rootElement) {
-        rootElement.classList.add('no-scroll');
-      }
-      if (contentElement) {
-        contentElement.classList.add('no-scroll');
-      }
     }
     return () => {
       document.body.classList.remove('no-scroll');
-      const appContainer = document.querySelector('.appContainer');
-      const rootElement = document.querySelector('#root');
-      const contentElement = document.querySelector('.content');
-
-      if (appContainer) {
-        appContainer.classList.remove('no-scroll');
-      }
-      if (rootElement) {
-        rootElement.classList.remove('no-scroll');
-      }
-      if (contentElement) {
-        contentElement.classList.remove('no-scroll');
-      }
     };
   }, []);
 
