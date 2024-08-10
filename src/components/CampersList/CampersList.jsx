@@ -1,15 +1,15 @@
 import { useState, useEffect } from 'react';
 
-import css from './AdvertList.module.css';
+import css from './CampersList.module.css';
 
 import { useSelector } from 'react-redux';
 import { selectFavorites } from '../../redux/selectors';
-import AdvertItem from '../AdvertItem/AdvertItem';
+import AdvertItem from '../Camper/Camper';
 
 import ModalAdvert from '../Modal/ModalAdvert';
 import { LoadMoreBtn } from '../Buttons/Buttons';
 
-const AdvertsList = ({ allAdverts, isFavorites = false }) => {
+const CampersList = ({ allAdverts, isFavorites = false }) => {
   const [advertsLimited, setAdvertsLimited] = useState([]);
   const [showLoadMore, setShowLoadMore] = useState(true);
   const [showModal, setShowModal] = useState(false);
@@ -73,4 +73,4 @@ const AdvertsList = ({ allAdverts, isFavorites = false }) => {
   );
 };
 
-export default AdvertsList;
+export default CampersList;

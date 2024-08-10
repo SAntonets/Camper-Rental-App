@@ -11,7 +11,7 @@ const FeatureDetailsList = ({ features }) => {
         if (key === 'airConditioner') {
           keyText = 'air conditioner';
         }
-        if ((key !== 'beds') & (key !== 'hob')) {
+        if ((key !== 'beds') && (key !== 'hob')) {
           valueText = '';
         }
         if (value) {

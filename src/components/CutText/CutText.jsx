@@ -1,4 +1,4 @@
-import css from '../AdvertItem/AdvertItem.module.css';
+import css from '../Camper/Camper.module.css';
 
 export const CutText = ({ children, maxLength = 62 }) => {
   if (children.length <= maxLength) {

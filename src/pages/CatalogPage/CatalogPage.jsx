@@ -10,7 +10,7 @@ import {
   selectIsLoading,
 } from '../../redux/selectors';
 import Loader from '../../components/Loader/Loader';
-import AdvertsList from '../../components/AdvertList/AdvertList';
+import AdvertsList from '../../components/CampersList/CampersList';
 import SearchForm from '../../components/SearchForm/SearchForm';
 
 
