@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("../../../public/images/camper-background.jpg");
+  background-image: url("../../../public/images/camper-background.webp");
   background-size: cover;
   background-position: center;
 }

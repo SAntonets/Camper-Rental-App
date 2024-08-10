@@ -1,20 +1,19 @@
 import { useState } from 'react';
-import css from './BookingForm.module.css';
-import svgSprite from '../../../public/images/icons.svg';
+import { useNavigate } from 'react-router-dom';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
 import { validateForm } from '../../helpers/bookingFormValidation';
 import { SubmitButton } from '../Buttons/Buttons';
-import { toast } from 'react-toastify';
-import { useNavigate } from 'react-router-dom';
+import css from './BookingForm.module.css';
+import svgSprite from '../../../public/images/icons.svg';
 
 const BookingForm = () => {
   const navigate = useNavigate();
   const [startDate, setStartDate] = useState(null);
 
-  const handleSubmit = event => {
+  const handleSubmit = (event) => {
     event.preventDefault();
 
     const formData = new FormData(event.target);
@@ -30,8 +29,7 @@ const BookingForm = () => {
       toast.success('Form submitted successfully!');
       setTimeout(() => {
         resetForm();
-      }, 1000)
-     
+      }, 1000);
     } else {
       console.log('Form is invalid :>> ', errors);
     }
@@ -40,24 +38,22 @@ const BookingForm = () => {
   const resetForm = () => {
     document.querySelector('form').reset();
     setStartDate(null);
-    navigate(0); 
+    navigate(0);
   };
 
   return (
-    <div className={css.bookForm_wrapper}>
+    <div className={css.bookFormWrapper}>
       <form
         name="BookingForm"
-        className={css.book_form}
+        className={css.bookForm}
         onSubmit={handleSubmit}
       >
-        <div className={css.bookForm_title}>
+        <div className={css.bookFormTitle}>
           <h3 className="subtitle_h3">Book your campervan now</h3>
-          <p className="text">
-            Stay connected! We are always ready to help you.
-          </p>
+          <p className="text">Stay connected! We are always ready to help you.</p>
         </div>
 
-        <div className={css.bookForm_inputs}>
+        <div className={css.bookFormInputs}>
           <label htmlFor="name">
             <input
               id="name"
@@ -65,7 +61,7 @@ const BookingForm = () => {
               type="text"
               placeholder="Name"
               autoComplete="auto"
-              className={css.bookForm_input}
+              className={css.bookFormInput}
               required
             />
           </label>
@@ -76,23 +72,24 @@ const BookingForm = () => {
               type="email"
               placeholder="Email"
               autoComplete="auto"
-              className={css.bookForm_input}
+              className={css.bookFormInput}
               required
             />
           </label>
 
-          <label htmlFor="bookingDate" className={css.calendar_container}>
+          <label htmlFor="bookingDate" className={css.calendarContainer}>
             <DatePicker
               selected={startDate}
               onChange={date => setStartDate(date)}
               placeholderText="Booking date"
               minDate={new Date()}
               dateFormat="dd/MM/yyyy"
-              className={`${css.bookForm_input} ${css.date_input}`}
+              className={`${css.bookFormInput} ${css.dateInput}`}
+              calendarClassName={css.reactDatepicker}
               formatWeekDay={nameOfDay => nameOfDay.slice(0, 3)}
               required
             />
-            <svg className={css.calendar_svg} width={20} height={20}>
+            <svg className={css.calendarSvg} width={20} height={20}>
               <use href={`${svgSprite}#calendar`}></use>
             </svg>
           </label>
@@ -102,7 +99,7 @@ const BookingForm = () => {
               id="comment"
               name="comment"
               placeholder="Comment"
-              className={css.bookForm_textarea}
+              className={css.bookFormTextarea}
             ></textarea>
           </label>
         </div>
