@@ -3,8 +3,10 @@ import css from './BookingForm.module.css';
 import svgSprite from '../../../public/images/icons.svg';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-import { SubmitButton } from '../Button/Button';
+
 import { validateForm } from '../../helpers/bookingFormValidation';
+import { SubmitButton } from '../Buttons/Buttons';
+
 
 const BookingForm = () => {
   const [startDate, setStartDate] = useState();

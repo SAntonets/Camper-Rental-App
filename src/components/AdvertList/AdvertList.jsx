@@ -5,8 +5,9 @@ import css from './AdvertList.module.css';
 import { useSelector } from 'react-redux';
 import { selectFavorites } from '../../redux/selectors';
 import AdvertItem from '../AdvertItem/AdvertItem';
-import { LoadMoreBtn } from '../Button/Button';
+
 import ModalAdvert from '../Modal/ModalAdvert';
+import { LoadMoreBtn } from '../Buttons/Buttons';
 
 const AdvertsList = ({ allAdverts, isFavorites = false }) => {
   const [advertsLimited, setAdvertsLimited] = useState([]);

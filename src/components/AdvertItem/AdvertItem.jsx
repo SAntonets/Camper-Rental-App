@@ -7,8 +7,9 @@ import svgSprite from '../../../public/images/icons.svg';
 import { useDispatch } from 'react-redux';
 import { setFavorite } from '../../redux/favoritesSlice';
 import { CutText, CutTitle } from '../CutText/CutText';
-import { Button } from '../Button/Button';
+
 import FeaturesInAdvertItem from '../Features/FeaturesInAdvertItem';
+import { Button } from '../Buttons/Buttons';
 
 const AdvertItem = ({ advert, toggleShowModal, isFavorite = false }) => {
   const dispatch = useDispatch();
