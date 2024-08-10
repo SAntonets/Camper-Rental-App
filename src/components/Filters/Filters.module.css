@@ -27,7 +27,6 @@
   align-items: center;
   flex-direction: column;
   gap: 8px;
-  padding: 12px;
   width: calc((100% - 20px) / 3);
   height: 95px;
   text-align: center;
@@ -38,10 +37,13 @@
   transition: border-color var(--transition-function);
 }
 
-.equipment_label:hover,
 .equipment_label:focus,
 .equipment_label:has(input:checked) {
   border-color: var(--button);
+}
+
+.equipment_label:hover {
+  border-color: var(--main);
 }
 
 .equipment_label input,

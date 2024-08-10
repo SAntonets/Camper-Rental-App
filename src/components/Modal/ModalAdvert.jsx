@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import css from './ModalAdvert.module.css';
-import style from '../AdvertItem/AdvertItem.module.css';
+import style from '../Camper/Camper.module.css';
 import svgSprite from '../../../public/images/icons.svg';
 
 

@@ -2,7 +2,7 @@ import css from './Features.module.css';
 import svgSprite from '../../../public/images/icons.svg';
 import { toCapitalize } from '../../helpers/helperFunctions';
 
-const FeaturesInAdvertItem = ({ advert }) => {
+const FeaturesInCamper = ({ advert }) => {
   return (
     <>
       <li className={css.features_item}>
@@ -56,4 +56,4 @@ const FeaturesInAdvertItem = ({ advert }) => {
   );
 };
 
-export default FeaturesInAdvertItem;
+export default FeaturesInCamper;

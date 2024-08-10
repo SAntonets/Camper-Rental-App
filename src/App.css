@@ -1,7 +1,3 @@
-@import "./styles/variables.css";
-@import "./styles/reset.css";
-@import "./styles/common.css";
-
 #root {
   max-width: 1440px;
   margin: 0 auto;
@@ -15,14 +11,19 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: Inter, sans-serif;
-  background-color: var(--primary-color);
-  display: flex;
-}
-
 .no-scroll {
   overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: var(--main);
 }
 
 .appContainer {
@@ -38,4 +39,26 @@ body {
   margin: 0 auto;
   width: 100%;
   text-align: start;
+}
+
+.subtitle_h2 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.subtitle_h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.subtitle_h4 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+}
+
+.text {
+  color: var(--text-color);
 }

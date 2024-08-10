@@ -1,4 +1,4 @@
-import css from './AdvertItem.module.css';
+import css from './Camper.module.css';
 import style from '../Features/Features.module.css';
 import svgSprite from '../../../public/images/icons.svg';
 
@@ -8,10 +8,10 @@ import { useDispatch } from 'react-redux';
 import { setFavorite } from '../../redux/favoritesSlice';
 import { CutText, CutTitle } from '../CutText/CutText';
 
-import FeaturesInAdvertItem from '../Features/FeaturesInAdvertItem';
+import FeaturesInCamper from '../Features/FeaturesInCamper';
 import { Button } from '../Buttons/Buttons';
 
-const AdvertItem = ({ advert, toggleShowModal, isFavorite = false }) => {
+const Camper = ({ advert, toggleShowModal, isFavorite = false }) => {
   const dispatch = useDispatch();
 
   return (
@@ -71,7 +71,7 @@ const AdvertItem = ({ advert, toggleShowModal, isFavorite = false }) => {
         </div>
         <CutText>{advert.description}</CutText>
         <ul className={style.features_list}>
-          <FeaturesInAdvertItem advert={advert} />
+          <FeaturesInCamper advert={advert} />
         </ul>
         <Button
           onClick={() => {
@@ -85,4 +85,4 @@ const AdvertItem = ({ advert, toggleShowModal, isFavorite = false }) => {
   );
 };
 
-export default AdvertItem;
+export default Camper;

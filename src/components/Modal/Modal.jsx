@@ -5,25 +5,25 @@ import css from './ModalAdvert.module.css';
 const modalRoot = document.querySelector('#modal-root');
 
 const Modal = ({ onModalClose, children }) => {
+
   useEffect(() => {
-
-    document.body.classList.add('no-scroll');
-
-
+    if (modalRoot) {
+      document.body.classList.add('no-scroll');
+    }
     return () => {
       document.body.classList.remove('no-scroll');
-      console.log("Removing no-scroll");
     };
   }, []);
 
-  const handleKeyDown = event => {
-    if (event.code === 'Escape') {
-      onModalClose();
-    }
-  };
-
   useEffect(() => {
+    const handleKeyDown = event => {
+      if (event.code === 'Escape') {
+        onModalClose();
+      }
+    };
+
     window.addEventListener('keydown', handleKeyDown);
+
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
     };
@@ -35,11 +35,11 @@ const Modal = ({ onModalClose, children }) => {
     }
   };
 
+  if (!modalRoot) return null;
+
   return createPortal(
     <div className={css.modal_overlay} onClick={handleBackdropClick}>
-      <div className={css.modal_content}>
-        {children}
-      </div>
+      {children}
     </div>,
     modalRoot
   );
