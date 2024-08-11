@@ -1,0 +1,106 @@
+.react-datepicker {
+  display: block;
+  position: relative;
+  line-height: initial;
+  padding: 16px;
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 0.8rem;
+  background-color: var(--white);
+  color: var(--main);
+  border-radius: 12px;
+  border: 1px solid rgba(16, 24, 40, 0.2);
+  min-height: 300px;
+}
+
+.react-datepicker__header {
+  background-color: var(--white);
+  border-bottom: none;
+  border-top-left-radius: 0;
+  padding: 0;
+  position: relative;
+}
+
+.react-datepicker__current-month {
+  display: block;
+  color: var(--main);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 120%;
+  border: 1p solid rgba(16, 24, 40, 0.2);
+}
+
+.react-datepicker__day-names {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.react-datepicker__day-name {
+  margin: 0;
+  width: 41px;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  color: var(--text-color);
+  text-transform: uppercase;
+}
+
+.react-datepicker__month {
+  margin: 20px 0 0 0;
+}
+
+.react-datepicker__day {
+  width: 41px;
+  height: 32px;
+  margin: 0;
+  color: var(--main);
+}
+
+.react-datepicker__day--disabled {
+  color: var(--text-color);
+}
+
+.react-datepicker__navigation {
+  top: 12px;
+}
+
+.react-datepicker__day--keyboard-selected {
+  background-color: var(--button);
+  transition: background-color var(--transition-function);
+}
+
+.react-datepicker__day--keyboard-selected:hover {
+  background-color: var(--button-hover);
+}
+
+.react-datepicker__day--selected {
+  background-color: var(--button);
+  transition: background-color var(--transition-function);
+}
+
+.react-datepicker__day--selected:hover {
+  background-color: var(--button-hover);
+}
+
+.react-datepicker__navigation *::before {
+  border-color: var(--text-color);
+  transition: background-color var(--transition-function);
+}
+
+.react-datepicker__navigation-icon--next::before {
+  height: 12px;
+  width: 12px;
+}
+
+.react-datepicker__navigation-icon--next::before {
+  left: -12px;
+}
+
+.react-datepicker__navigation-icon--previous {
+  right: -6px;
+}
+
+.react-datepicker__navigation:hover *::before {
+  border-color: var(--main);
+}

@@ -7,6 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { validateForm } from '../../helpers/bookingFormValidation';
 import { SubmitButton } from '../Buttons/Buttons';
 import css from './BookingForm.module.css';
+import '../../styles/datepicer.css';
 import svgSprite from '../../../public/images/icons.svg';
 
 const BookingForm = () => {
@@ -83,6 +84,7 @@ const BookingForm = () => {
               onChange={date => setStartDate(date)}
               placeholderText="Booking date"
               minDate={new Date()}
+              calendarStartDay={1}
               dateFormat="dd/MM/yyyy"
               className={`${css.bookFormInput} ${css.dateInput}`}
               calendarClassName={css.reactDatepicker}
