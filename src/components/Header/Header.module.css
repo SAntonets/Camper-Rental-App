@@ -1,11 +1,14 @@
 .header {
   padding: 12px;
-  background-color: #1a237e;
+  background-color: #180161;
   color: var(--white);
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .navList {
