@@ -51,6 +51,10 @@
   color: var(--text-color);
 }
 
+.bookFormTextarea::placeholder {
+  color: var(--text-color);
+}
+
 .calendarContainer {
   position: relative;
   cursor: pointer;
