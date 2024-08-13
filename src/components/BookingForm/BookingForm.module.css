@@ -51,6 +51,15 @@
   color: var(--text-color);
 }
 
+.bookFormTextarea::placeholder,
+.bookFormInput::placeholder {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--placeholder);
+}
+
 .calendarContainer {
   position: relative;
   cursor: pointer;
